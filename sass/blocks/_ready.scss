@@ -1,0 +1,116 @@
+.ready {
+    padding-bottom: 70px;
+}
+
+.ready__title {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.title-3 {
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 94px;
+    color: #161616;
+
+}
+
+.ready__text {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.text-3 {
+    font-family: 'HK Grotesk', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #161616;
+}
+
+.ready__carousel {
+}
+
+.carousel {
+    position: relative;
+}
+.carousel__card:not(last-chald) {
+    margin-right: 40px;
+    @media (max-width: 1445px) {
+        margin-right: 25px;
+        }
+}
+.owl-carousel {
+// margin-left: 20px;
+}
+
+.owl-theme {
+
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    /* Tablet */
+    @media (max-width: 690px) {
+    display: none;
+    }
+}
+
+.nav-btn-left {
+    left: -40px;
+}
+
+.nav-btn-right {
+    right: -40px;
+}
+
+.carousel-img {
+    margin-bottom: 20px;
+    width: 249px; 
+    height: 249px !important;
+    // height: auto;
+}
+.carousel__title {
+    font-family: 'Outfit', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    color: #000000;
+    /* Tablet */
+    @media (max-width: 1445px) {
+    min-height: 64px;
+    }
+}
+.carousel__price {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #888887;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.carousel__button {
+}
+.button {
+}
+.button--wide {
+    font-family: 'HK Grotesk', serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: unset;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    // max-width: 331px;
+    width: 100%;
+}

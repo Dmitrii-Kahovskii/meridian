@@ -1,0 +1,94 @@
+.advantages {
+    padding-bottom: 50px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    padding-bottom: 10px;
+    }
+}
+
+.advantages__row {
+    display: flex;
+    /* Mobile */
+    @media (max-width: 899px) {
+      flex-direction: column;
+    }
+}
+
+.advantages__row .advantages-card:not(:last-child)::before {
+    content: '';
+    width: 1.79px;
+    height: 242px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+    @media (max-width: 899px) {
+        bottom: 0;
+        right: unset;
+        top: unset;
+        height: 1.79px;
+        width: 100%;
+      }
+}
+.advantages-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 593px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background: #3A5041;
+    position: relative;
+    /* Mobile */
+    @media (max-width: 1199px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @media (max-width: 899px) {
+        width: 100%;
+      }
+      /* Mobile XS */
+      @media (max-width: 599px) {
+      width: 320px;
+      }
+    }
+
+    & img {
+        width: 105px;
+        height: 92px;
+        margin-bottom: 20px;
+    }
+
+    & h3 {
+        margin-bottom: 17px;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.265em;
+        text-transform: uppercase;
+        /* Tablet */
+        @media (max-width: 1231px) {
+        letter-spacing: 0.1em;
+        }
+        @media (max-width: 1199px) {
+            margin-bottom: 10px;
+            font-size: 22px;
+            line-height: 25px;
+        }
+        @media (max-width: 969px) {
+            font-size: 20px;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    & p {
+        font-family: 'HK Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+    }
+    @media (max-width: 969px) {
+        font-size: 18px;
+    }
+}

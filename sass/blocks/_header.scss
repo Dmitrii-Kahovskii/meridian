@@ -1,0 +1,124 @@
+.header {
+    padding-bottom: 26px;
+}
+
+.header__title {
+    background: #3A5041;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.title-1 {
+    font-family: 'HK Grotesk', sans-serif;
+    // font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* Mobile */
+    @media (max-width: 899px) {
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 16px;
+    }
+}
+
+.header__nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1335px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 10px;
+        }
+}
+
+.nav-tablet {
+    margin-right: 60px;
+    display: flex;
+    column-gap: 29px;
+
+    font-family: 'HK Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    display: none;
+    }
+
+    & li a {
+        color: #BEBFBE;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    & li a:hover {
+        color: #00264B;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+.header__logo {
+    margin-right: 46px;
+}
+
+.logo img {
+
+@media (max-width: 1550px) {
+width: 140px;
+}
+}
+
+.header__login {
+    margin-right: 23px;
+}
+
+.login {
+    display: flex;
+    column-gap: 10px;
+
+    font-family: 'HK Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    font-size: 18px;
+    flex-direction: column;
+    line-height: 25px;
+    }
+
+    &  a {
+        
+        color: #888887;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    & a:hover {
+        color: #878787;
+        // flex: none;
+        // order: 1;
+        // flex-grow: 0;
+    }
+
+}
+.header__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.btn-basket {
+}
+.btn-search {
+}
